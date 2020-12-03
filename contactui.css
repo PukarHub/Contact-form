@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact__navbar {
+  height: 60px;
+  background-color: #a775ba;
+}
+
+.contact__navbar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 180px;
+  margin-right: 190px;
+}
+
+.contact__navbar ul li {
+  color: white;
+  margin-top: 20px;
+  min-width: 20px;
+  font-size: 1rem;
+  padding-bottom: 15px;
+}
+
+.contact__navbar li:hover {
+  border-bottom: 2px solid white;
+  transition: 2s ease-in-out;
+}
+
+.contact__header {
+  text-align: center;
+}
+
+.contact__header > h2 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #2a263c;
+}
+
+.contact__header > p {
+  margin-top: 7px;
+}
+
+.card {
+  width: 360px;
+  height: 350px;
+  margin-top: 30px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.form {
+  text-align: center;
+}
+
+.form #email {
+  width: 88%;
+  outline-width: 0;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 7px;
+  margin-top: 25px;
+}
+
+.form #subject {
+  width: 88%;
+  outline-width: 0;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 7px;
+  margin-top: 15px;
+}
+
+.form #message {
+  width: 88%;
+  outline-width: 0;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 15px;
+}
+
+.sendbtn {
+  background-color: #a775ba;
+  color: white;
+  padding: 9px;
+  border: none;
+  outline-width: 0;
+  border-radius: 5px;
+  display: flex;
+  margin-left: 22px;
+  margin-top: 14px;
+}
+
+.sendbtn:hover {
+  opacity: 0.8;
+}
+
+#email::placeholder {
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#subject::placeholder {
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#message::placeholder {
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.contact__footer {
+  padding: 4rem;
+}
+
+.footer__heading {
+  text-align: center;
+  padding: 100px;
+  font-weight: 900;
+  margin-top: -50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.card1 {
+  position: relative;
+  width: 360px;
+  height: 350px;
+  margin-top: 30px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 > h5 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 110px;
+  margin-left: 40px;
+}
+
+.card1 > ul {
+  list-style: none;
+  margin-left: 60px;
+  font-size: 15px;
+}
+
+.card1 > ul > li {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#usa {
+  /* padding: 2px; */
+  max-width: 200px;
+  outline-width: 0;
+  border: none;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -38px;
+  background-color: transparent;
+}
+
+#nepal {
+  position: absolute;
+  max-width: 130px;
+  outline-width: 0;
+  border: none;
+  right: 0;
+  margin-top: -60px;
+  background-color: transparent;
+  margin-right: 385px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .contact__navbar ul {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .contact__navbar ul li {
+    margin: 0.1rem;
+  }
+  .contact__navbar {
+    height: 85px;
+  }
+  #col {
+    margin-right: rem;
+  }
+  .contact__footer {
+    padding: 0rem;
+  }
+  .footer__heading {
+    padding: 70px;
+  }
+  .card1 {
+    transform: scale(0.98);
+    margin-top: 100px;  
+  }
+
+  #usa {
+    top: 1300px;
+  }
+
+  #nepal {
+    top: 1748px;
+    left: 105px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 799px) {
+  body {
+    overflow-x: hidden;
+  }
+  .contact__navbar ul {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  .contact__navbar ul li {
+    margin: 0.1rem;
+  }
+  .contact__navbar {
+    height: 85px;
+  }
+  #col {
+    margin-right: rem;
+  }
+  .contact__footer {
+    padding: 0rem;
+  }
+  .footer__heading {
+    padding: 70px;
+  }
+  .card1 {
+    transform: scale(0.98);
+    margin-top: 120px;
+  }
+
+  #usa {
+      top: 1250px;
+  }
+
+  #nepal {
+    top: 1700px;
+    left: 215px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .contact__footer {
+    padding: 0rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  .contact__footer #container {
+    max-width: 100%;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+  }
+  #nepal {
+    top: 1200px;
+    left: 650px;
+    position: absolute;
+  }
+}
